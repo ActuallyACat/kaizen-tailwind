@@ -1,0 +1,21 @@
+@import "~@kaizen/design-tokens/sass/color";
+
+.transition-background-color { 
+  transition: background-color 0.25s;
+}
+
+.border-wisteria-500-disabled { 
+  border-color: rgba($kz-color-wisteria-500, 0.3);
+}
+
+.text-wisteria-800-disabled { 
+  color: rgba($kz-color-wisteria-800, 0.3);
+}
+
+.border-focus { 
+  box-shadow: 0px 0px 0px 4px $kz-color-cluny-500;
+}
+
+.p-half {
+  padding: 1px;
+}
