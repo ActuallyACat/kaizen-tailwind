@@ -5,18 +5,18 @@ import "./button.scss"
 export interface ButtonProps { 
   disabled: boolean,
   focus: boolean,
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 export const Button = ({
   disabled = false,
   focus = false, // This is a shit thing to do. Just for demo purposes
-  children
+  children = null
 }: ButtonProps) => {
   const classNames = classnames(
     'border-4',
     'rounded',
-    'px-8',
-    'py-2',
+    'px-md',
+    'py-sm',
     'transition-background-color',
     {
       'hover:bg-ash': !focus,
